@@ -1,0 +1,29 @@
+{
+	"players": [null,
+				null,
+				["Merlin","Mordred"],
+				["Morgana","Merlin","Loyal"],
+				["Morgana","Merlin","Loyal","Loyal"],
+				["Morgana","Mordred","Merlin","Percival","Loyal"],
+				["Morgana","Mordred","Merlin","Percival","Loyal","Loyal"],
+				["Morgana","Mordred","Assassin","Merlin","Percival","Loyal","Loyal"],
+				["Morgana","Mordred","Assassin","Merlin","Percival","Loyal","Loyal","Loyal"],
+				["Morgana","Mordred","Assassin","Merlin","Percival","Loyal","Loyal","Loyal","Loyal"],
+				["Morgana","Mordred","Assassin","Oberon","Merlin","Percival","Loyal","Loyal","Loyal","Loyal"]
+			],
+	"missions":[null,
+				null,
+				[[1,1],[1,1],[1,1],[1,1],[1,1]],
+				[[2,1],[2,1],[2,1],[2,1],[2,1]],
+				[[2,1],[2,1],[3,1],[2,1],[3,1]],
+				[[2,1],[3,1],[2,1],[3,1],[3,1]],
+				[[2,1],[3,1],[4,1],[3,1],[4,1]],
+				[[2,1],[3,1],[3,1],[4,2],[4,1]],
+				[[3,1],[4,1],[4,1],[5,2],[5,1]],
+				[[3,1],[4,1],[4,1],[5,2],[5,1]],
+				[[3,1],[4,1],[4,1],[5,2],[5,1]]
+			],
+	"merlin_visible":["Morgana","Assassin","Oberon"],
+	"evil_visible":["Morgana","Mordred","Assassin"],
+	"percival_visible":["Morgana","Merlin"]
+}
