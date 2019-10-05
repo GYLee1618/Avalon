@@ -128,11 +128,11 @@ class AvalonGame:
                 raise DuplicatePlayersException(player)
 
         self._current_team = players
-        self._state += 1
+        self.increment_state()
 
         # if hammer has been hit (that is, hammer = 4), we can skip approval state (state 2)
         if self._hammer >= 4:
-            self._state += 1
+            self.increment_state()
 
         return True
 
@@ -161,7 +161,7 @@ class AvalonGame:
             self.increment_hammer()
             self.increment_turn()
             return False
-        self._state += 1
+        self.increment_state()
         return True
 
     def check_if_success(self, success):
@@ -187,13 +187,16 @@ class AvalonGame:
         self.increment_turn()
         self.increment_day()
         self.reset_hammer()
-        self._state = 0
+        self.increment_state()
 
         if success.count(False) >= self.missions[len(self._players)][self._day][1]:
             return False
 
         return True
 
+    def increment_state(self):
+        """ Increments _state """
+        self._state = self._state + 1 % 3
 
     def increment_day(self):
         """ Increments _day """
